@@ -24,6 +24,6 @@ export class UserInvoicesService {
   }
 
   private getTextForInvoiceHTML(botData: SendInvoiceDto) {
-    return `<b>Пользователь запросил перевод</b>\n\nПользователь с ID <code>${botData.userId}</code> запросил вывод NFT ${botData.orderedCoin}\n\nКоличество монет: <b>${botData.amountOfCoin}</b>\n\nКошелек пользователя: <code>${botData.ethWallet}</code>\n\n<i>Кошелек пользователя легко скопировал кликом</i>`;
+    return `<b>Пользователь запросил перевод</b>\n\nПользователь с ID <code>${botData.userId}</code> запросил вывод NFT <b>${botData.orderedCoin}</b>\n\nКоличество монет: <b>${botData.amountOfCoin}</b>\n\nКошелек пользователя: <code>${botData.ethWallet}</code>\n\n<i>Кошелек пользователя легко скопировал кликом</i>`;
   }
 }
