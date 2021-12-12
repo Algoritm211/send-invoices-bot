@@ -14,7 +14,7 @@ export class UserInvoicesService {
 
   async sendInvoiceToTGBot(botData: SendInvoiceDto) {
     const keyboard = Markup.inlineKeyboard([
-      Markup.button.callback('✅ Выполнено', 'invoices:completed'),
+      Markup.button.callback('✅ Выполнить', 'invoices:completed'),
     ]);
     await this.bot.telegram.sendMessage(
       this.adminChatId,
